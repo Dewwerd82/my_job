@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="./style-truck.css" />
+    
+</head>
+<body>
+    <div class="container-fluid">
+        
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark-subtle">
+            
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                  <img class="bi me-2 mx-4" width="90" height="32" src="./MaxProff.png"></img>
+                  <!-- <span class="fs-4">Simple header</span> -->
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="navbar-collapse collapse mx-5 px-5" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Цены</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Портфолио</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Преимущество</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </div>         
+            </nav>
+
+            <header class="d-flex flex-wrap justify-content-center border-bottom">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+                    <div class="container-fluid">
+                      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav w-100">
+                          <li class="nav-item dropdown w-100">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+
+                          <li class="nav-item dropdown w-100">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+
+                          <li class="nav-item dropdown w-100">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+
+                          <li class="nav-item dropdown w-100">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+
+                          <li class="nav-item dropdown w-100">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </header>
+
+            <section class="container-fluid g-0">
+              <div class="foto">
+
+              
+                <!--foto-->
+                <img src="./2.jpg" class="img-fluid foto" alt="foto">
+                  <div class="foto-container">
+                    <div class="foto-aside">
+                      <div class="foto-aside-header">
+                        <h1>РЕМОНТ КВАРТИР И КОТЕДЖЕЙ В МИНСКЕ И МИНСКОЙ ОБЛАСТИ</h1>
+                      </div>
+                      <div class="foto-aside-body">
+                        <h2>от 100$ м.кв.</h1>
+                      </div>
+                      <div class="foto-aside-footer">
+                        <div class="foto-aside-footer-row1">
+                          <div class="foto-aside-footer-row1-img1"></div>
+                          <div class="foto-aside-footer-row1-img2"></div>
+                        </div>
+                        <div class="foto-aside-footer-row2">
+                          <div class="foto-aside-footer-row2-img1"></div>
+                          <div class="foto-aside-footer-row2-img2"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="foto-price">
+                      <div class="foto-price-h1">
+                        <h2>Рассчитайте стоимость ремонта:</h2>
+                      </div>
+                      <div>
+                        <h3>Вид ремонта:</h3>
+                      </div>
+                      <div class="foto-price-radio-list">
+                        <div>
+                          <label>
+                            <input type="radio" name="custom" value="cosmetik" checked />
+                            Косметический
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="custom" value="key" />
+                            Под ключ
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="custom" value="capital" />
+                            Капитальный
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="custom" value="design" />
+                            Дизайнерский
+                          </label>
+                        </div>
+                      </div>
+            
+                      <!--line-->
+                      <div class="line">
+                      </div>
+            
+                      <div>
+                        <h3>Тип вашей недвижимости:</h3>
+                      </div>
+                      <div class="foto-price-radio-list">
+                        <div>
+                          <label>
+                            <input type="radio" name="flat" value="new" checked />
+                            Новостройка
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="flat" value="second" />
+                            Вторичное жильё
+                          </label>
+                        </div>
+                      </div>
+            
+                      <!--line-->
+                      <div class="line">
+                      </div>
+            
+                      <div>
+                        <h3>Количество комнат:</h3>
+                      </div>
+            
+                      <div class="foto-price-radio-list">
+                        <div>
+                          <label>
+                            <input type="radio" name="rooms" value="1" checked />
+                            1
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="rooms" value="2" />
+                            2
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="rooms" value="3" />
+                            3
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="radio" name="rooms" value="4" />
+                            4
+                          </label>
+                        </div>
+                      </div>
+            
+                      <!--line-->
+                      <div class="line">
+                      </div>
+            
+                      <div>
+                        <h3>Площадь, м.кв.:</h3>
+                      </div>
+                      <div class="foto-price-radio-list">
+                        <form class="range">
+                          <div class="form-group range__slider">
+                            <input type="range" step="1">
+                          </div><!--/form-group-->
+                          <div class="form-group range__value">
+                            <span></span>
+                            <label>м.кв.</label>
+                          </div><!--/form-group-->
+                        </form>
+                      </div>
+            
+                      <div class="foto-price-radio-list list-day">
+                        <div class="foto-price-radio-list-day">
+                          <span class="span-day">Срок ремонта:</span>
+                          <span class="span-day">до 34 дней</span>
+                        </div>
+                        <div class="foto-price-radio-list-day">
+                          <span class="span-day">Сукидка составляет:</span>
+                          <span class="span-day">до 500 руб.</span>
+                        </div>
+                      </div>
+            
+                      <div>
+                        <h3>Введите номер телефона:</h3>
+                      </div>
+                      <div class="foto-price-radio-list">
+                        <div>
+                          <form action="" class="foto-price-radio-list-form">
+            
+                            <div class="form__field">
+            
+                              <input type="tel" name="name" placeholder="Телефон"
+                                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="19" maxlength="19" />
+                              <span class="form__error">Это поле должно содержать телефон в формате +375 (29)
+                                456-78-90</span>
+                            </div>
+                            <div class="form__field">
+                              <button type="submit">Отправить</button>
+                            </div>
+            
+                          </form>
+            
+                        </div>
+                        <div>
+            
+                        </div>
+                      </div>
+            
+                    </div>
+                  </div>
+              </div>
+            </section>
+
+            <!--price building-->
+  <section class="price-build">
+    <div class="price-build-h2">
+      <h2>Цены на ремонт</h2>
+    </div>
+    <div class="price-build-list">
+      <div class="price-build-list-cosmetikc">
+        <div class="price-build-list-cosmetikc-header">
+          <div class="price-build-list-cosmetikc-header-img">
+            <img class="rem-logo" src="./3.jpg" />
+          </div>
+          <div class="price-build-list-cosmetikc-header-text">
+            <div class="price-build-list-cosmetikc-header-text-h3">
+              <h3>КОСМЕТИЧЕСКИЙ</h3>
+            </div>
+            <div class="price-build-list-cosmetikc-header-text-span">
+              <h4>от 5 дней</h4>
+            </div>
+          </div>
+        </div>
+        <div class="price-build-list-cosmetikc-body">
+          <div class="price-build-list-cosmetikc-body-h5">
+            <h5>
+              Такой тип ремонта подойдёт для того чтобы "освежить" ремонт в
+              квартире : заменить покрытие стен, потолка и пола без
+              предварительной подготовки (не рекомендую)
+            </h5>
+          </div>
+        </div>
+        <div class="line2"></div>
+
+        <div class="price-build-list-cosmetikc-body2">
+          <div class="price-build-list-cosmetikc-body2-h5">
+            <h5>Демонтаж</h5>
+          </div>
+          <div class="price-build-list-cosmetikc-body2-list">
+            <ul>
+              <li>Демонтаж старых покрытий</li>
+              <li>Демонтаж старых электрики</li>
+            </ul>
+          </div>
+          <div class="price-build-list-cosmetikc-body2-h5">
+            <h5>Черновые работы</h5>
+          </div>
+          <div class="price-build-list-cosmetikc-body2-list">
+            <ul>
+              <li>Грунтовка стен и пола</li>
+            </ul>
+          </div>
+          <div class="price-build-list-cosmetikc-body2-h5">
+            <h5>Чистовые работы</h5>
+          </div>
+
+
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="price-build-list-cosmetikc-body2-h4">
+            <h4>от 2450 руб. мк.в.</h4>
+          </div>
+
+          <div class="price-build-list-cosmetikc-body2-button">
+            <button class="truck-button">
+              <span class="default">Complete Order</span>
+              <span class="success">
+                Order Placed
+                <svg viewbox="0 0 12 10">
+                  <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+              </span>
+              <div class="truck">
+                <div class="wheel"></div>
+                <div class="back"></div>
+                <div class="front"></div>
+                <div class="box"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-build-list-capital">
+        <div class="price-build-list-capital-header">
+          <div class="price-build-list-capital-header-img">
+            <img class="rem-logo" src="./3.jpg" />
+          </div>
+          <div class="price-build-list-capital-header-text">
+            <div class="price-build-list-capital-header-text-h3">
+              <h3>КАПИТАЛЬНЫЙ</h3>
+            </div>
+            <div class="price-build-list-capital-header-text-span">
+              <h4>от 15 дней</h4>
+            </div>
+          </div>
+        </div>
+        <div class="price-build-list-capital-body">
+          <div class="price-build-list-capital-body-h5">
+            <h5>
+              Такой тип ремонта подойдёт если требуется отремонтировать
+              квартиру: выровнять стены, стяжка пола, проложить
+              инженерию и сделать чистовую отделку.
+            </h5>
+          </div>
+        </div>
+        <div class="line2"></div>
+
+        <div class="price-build-list-capital-body2">
+          <div class="price-build-list-cosmetikc-body2-h5">
+            <h5>Демонтаж</h5>
+          </div>
+          <div class="price-build-list-capital-body2-list">
+            <ul>
+              <li>Демонтаж старых покрытий</li>
+              <li>Демонтаж старых электрики</li>
+            </ul>
+          </div>
+          <div class="price-build-list-capital-body2-h5">
+            <h5>Черновые работы</h5>
+          </div>
+          <div class="price-build-list-capital-body2-list">
+            <ul>
+              <li>Грунтовка стен и пола</li>
+            </ul>
+          </div>
+          <div class="price-build-list-capital-body2-h5">
+            <h5>Чистовые работы</h5>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+
+          <div class="price-build-list-capital-body2-h4">
+            <h4>от 2450 руб. мк.в.</h4>
+          </div>
+
+          <div class="price-build-list-capital-body2-button">
+            <button class="truck-button">
+              <span class="default">Complete Order</span>
+              <span class="success">
+                Order Placed
+                <svg viewbox="0 0 12 10">
+                  <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+              </span>
+              <div class="truck">
+                <div class="wheel"></div>
+                <div class="back"></div>
+                <div class="front"></div>
+                <div class="box"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-build-list-key">
+        <div class="price-build-list-key-header">
+          <div class="price-build-list-key-header-img">
+            <img class="rem-logo" src="./3.jpg" />
+          </div>
+          <div class="price-build-list-key-header-text">
+            <div class="price-build-list-key-header-text-h3">
+              <h3>ПОД КЛЮЧ</h3>
+            </div>
+            <div class="price-build-list-key-header-text-span">
+              <h4>от 25 дней</h4>
+            </div>
+          </div>
+        </div>
+        <div class="price-build-list-key-body">
+          <div class="price-build-list-key-body-h5">
+            <h5>
+              Ремонт класса "евро" - капитальный ремонт с применением
+              современных отделочных материалов и стандартов, включающий
+              перепланировку.
+            </h5>
+          </div>
+        </div>
+        <div class="line2"></div>
+
+        <div class="price-build-list-key-body2">
+          <div class="price-build-list-key-body2-h5">
+            <h5>Демонтаж</h5>
+          </div>
+          <div class="price-build-list-key-body2-list">
+            <ul>
+              <li>Демонтаж старых покрытий</li>
+              <li>Демонтаж старых электрики</li>
+            </ul>
+          </div>
+          <div class="price-build-list-key-body2-h5">
+            <h5>Черновые работы</h5>
+          </div>
+          <div class="price-build-list-key-body2-list">
+            <ul>
+              <li>Грунтовка стен и пола</li>
+            </ul>
+          </div>
+          <div class="price-build-list-key-body2-h5">
+            <h5>Чистовые работы</h5>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+
+          <div class="price-build-list-key-body2-h4">
+            <h4>от 2450 руб. мк.в.</h4>
+          </div>
+
+          <div class="price-build-list-key-body2-button">
+            <button class="truck-button">
+              <span class="default">Complete Order</span>
+              <span class="success">
+                Order Placed
+                <svg viewbox="0 0 12 10">
+                  <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+              </span>
+              <div class="truck">
+                <div class="wheel"></div>
+                <div class="back"></div>
+                <div class="front"></div>
+                <div class="box"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-build-list-design">
+        <div class="price-build-list-design-header">
+          <div class="price-build-list-design-header-img">
+            <img class="rem-logo" src="./3.jpg" />
+          </div>
+          <div class="price-build-list-design-header-text">
+            <div class="price-build-list-design-header-text-h3">
+              <h3>ДИЗАЙНЕРСКИЙ</h3>
+            </div>
+            <div class="price-build-list-design-header-text-span">
+              <h4>от 35 дней</h4>
+            </div>
+          </div>
+        </div>
+        <div class="price-build-list-design-body">
+          <div class="price-build-list-design-body-h5">
+            <h5>
+              Дизайнерский ремонт ориетирован для настоящих ценителей
+              комфорта, эстетики и внутреннего удобства. Самый дорогой
+              проект. Мы его рекомендуем.
+            </h5>
+          </div>
+        </div>
+        <div class="line2"></div>
+
+        <div class="price-build-list-design-body2">
+          <div class="price-build-list-design-body2-h5">
+            <h5>Демонтаж</h5>
+          </div>
+          <div class="price-build-list-design-body2-list">
+            <ul>
+              <li>Демонтаж старых покрытий</li>
+              <li>Демонтаж старых электрики</li>
+            </ul>
+          </div>
+          <div class="price-build-list-design-body2-h5">
+            <h5>Черновые работы</h5>
+          </div>
+          <div class="price-build-list-design-body2-list">
+            <ul>
+              <li>Грунтовка стен и пола</li>
+            </ul>
+          </div>
+          <div class="price-build-list-design-body2-h5">
+            <h5>Чистовые работы</h5>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+
+          <div class="price-build-list-design-body2-h4">
+            <h4>от 2450 руб. мк.в.</h4>
+          </div>
+
+          <div class="price-build-list-design-body2-button">
+            <button class="truck-button">
+              <span class="default">Complete Order</span>
+              <span class="success">
+                Order Placed
+                <svg viewbox="0 0 12 10">
+                  <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+              </span>
+              <div class="truck">
+                <div class="wheel"></div>
+                <div class="back"></div>
+                <div class="front"></div>
+                <div class="box"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid g-0">
+    <!--show works-->
+    <div class="show-works">
+      <div class="show-works-h2">
+        <h2>ПРИМЕРЫ НАШИХ РАБОТ</h2>
+      </div>
+      <div class="show-works-list">
+        <div class="show-works-list-menu">
+          <button class="show-works-list-menu-button">Капитальный</button>
+          <button class="show-works-list-menu-button">Косметический</button>
+          <button class="show-works-list-menu-button">Под ключ</button>
+          <button class="show-works-list-menu-button">Студии</button>
+          <button class="show-works-list-menu-button">Черновой</button>
+        </div>
+      </div>
+      <div class="show-works-list-menu-form">
+        <form>
+          <div class="show-works-list-menu-radio">
+            <div class="show-works-list-radio">
+              <label>
+                <input type="radio" name="question" value="55" />
+                55 m2
+              </label>
+            </div>
+            <div class="show-works-list-radio">
+              <label>
+                <input type="radio" name="question" value="61" />
+                61 m2
+              </label>
+            </div>
+            <div class="show-works-list-radio">
+              <label>
+                <input type="radio" name="question" value="72" />
+                72 m2
+              </label>
+            </div>
+            <div class="show-works-list-radio">
+              <label>
+                <input type="radio" name="question" value="88" />
+                88 m2
+              </label>
+            </div>
+            <div class="show-works-list-radio">
+              <label>
+                <input type="radio" name="question" value="106" />
+                106 m2
+              </label>
+            </div>
+            <div class="show-works-list-radio">
+              <label>
+                <input type="radio" name="question" value="63" />
+                63 m2
+              </label>
+            </div>
+            <div class="show-works-list-radio">
+              <label>
+                <input type="radio" name="question" value="41" />
+                41 m2
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="show-works-slider">
+        
+      <div class="x-container">
+                 <div class="x-header">
+            <!--<div class="xh-inner">
+              <div class="xh-content">
+                <h1 class="xh-h1">Hi, im Tibix.</h1>
+                <h2 class="xh-h2">and this is... my AI gallery</h2>
+                <span class="xh-text">Enjoy fresh and hand-picked images that i've created using Midjourney AI.
+                <br/>
+                <br/>
+                  I will update this gallery with new images from time to time. If you enjoy what i'm creating, there's alot more on my Twitter.
+                </span>
+                <div class="x-socials">
+                  <a target="_top" href="https://www.twitter.com/Tiibiix" class="x-social" style="margin-right: 40px;">
+                    <img class="x-social-img" src="https://assets.codepen.io/1692350/x_twitter.png">
+                    <span>Tibix</span>
+                  </a>
+                  <a target="_top" href="https://www.twitter.com/def_not_ai" class="x-social">
+                    <img class="x-social-img" src="https://assets.codepen.io/1692350/x_twitter.png">
+                    <span>Def not AI</span>
+                  </a> -->
+                <!-- </div> -->
+              <!-- </div> -->
+      
+            </div>
+          </div>
+
+
+  <div class="x-gallery">
+    <div class="xg-tag-filter">
+      <div class="xg-btn xg-btn-tag xg-btn-active" data-tag="all">Show All</div>
+      <div class="xg-btn xg-btn-tag" data-tag="characters">Characters</div>
+      <div class="xg-btn xg-btn-tag" data-tag="scenery">Scenery</div>
+      <div class="xg-btn xg-btn-tag" data-tag="abstract">Abstract</div>
+    </div>
+    <div class="xg-container">
+      <div class="xg-loader">
+        <div class="xg-loader-text">sorting the gallery...</div>
+      </div>
+      <div class="xg-img-preview">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="show-works-form">
+          <form action="">
+            <div class="show-works-form-submit">
+              <button type="submit">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+        
+    </div>
+
+
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./range.js"></script>
+<script src="./slider.js"></script>
+<script src="./truck-js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+</html>

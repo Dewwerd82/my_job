@@ -1,0 +1,173 @@
+<div class="foto">
+        <img class="foto-img" src="./2.jpg" />
+        <div class="foto-container">
+          <div class="foto-aside">
+            <div class="foto-aside-header">
+              <h1>РЕМОНТ КВАРТИР И КОТЕДЖЕЙ В МИНСКЕ И МИНСКОЙ ОБЛАСТИ</h1>
+            </div>
+            <div class="foto-aside-body">
+              <h2>от 100$ м.кв.</h1>
+            </div>
+            <div class="foto-aside-footer">
+              <div class="foto-aside-footer-row1">
+                <div class="foto-aside-footer-row1-img1"></div>
+                <div class="foto-aside-footer-row1-img2"></div>
+              </div>
+              <div class="foto-aside-footer-row2">
+                <div class="foto-aside-footer-row2-img1"></div>
+                <div class="foto-aside-footer-row2-img2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="foto-price">
+            <div class="foto-price-h1">
+              <h2>Рассчитайте стоимость ремонта</h2>
+            </div>
+            <div>
+              <h3>Вид ремонта:</h3>
+            </div>
+            <div class="foto-price-radio-list">
+              <div>
+                <label>
+                  <input type="radio" name="custom" value="cosmetik" checked />
+                  Косметический
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="custom" value="key" />
+                  Под ключ
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="custom" value="capital" />
+                  Капитальный
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="custom" value="design" />
+                  Дизайнерский
+                </label>
+              </div>
+            </div>
+  
+            <!--line-->
+            <div class="line">
+            </div>
+  
+            <div>
+              <h3>Тип вашей недвижимости:</h3>
+            </div>
+            <div class="foto-price-radio-list">
+              <div>
+                <label>
+                  <input type="radio" name="flat" value="new" checked />
+                  Новостройка
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="flat" value="second" />
+                  Вторичное жильё
+                </label>
+              </div>
+            </div>
+  
+            <!--line-->
+            <div class="line">
+            </div>
+  
+            <div>
+              <h3>Количество комнат:</h3>
+            </div>
+  
+            <div class="foto-price-radio-list">
+              <div>
+                <label>
+                  <input type="radio" name="rooms" value="1" checked />
+                  1
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="rooms" value="2" />
+                  2
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="rooms" value="3" />
+                  3
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="rooms" value="4" />
+                  4
+                </label>
+              </div>
+            </div>
+  
+            <!--line-->
+            <div class="line">
+            </div>
+  
+            <div>
+              <h3>Площадь, м.кв.:</h3>
+            </div>
+            <div class="foto-price-radio-list">
+              <form class="range">
+                <div class="form-group range__slider">
+                  <input type="range" step="1">
+                </div><!--/form-group-->
+                <div class="form-group range__value">
+                  <span></span>
+                  <label>м.кв.</label>
+                </div><!--/form-group-->
+              </form>
+            </div>
+  
+            <div class="foto-price-radio-list list-day">
+              <div class="foto-price-radio-list-day">
+                <span class="span-day">Срок ремонта:</span>
+                <span class="span-day">до 34 дней</span>
+              </div>
+              <div class="foto-price-radio-list-day">
+                <span class="span-day">Сукидка составляет:</span>
+                <span class="span-day">до 500 руб.</span>
+              </div>
+            </div>
+  
+            <div>
+              <h3>Введите номер телефона:</h3>
+            </div>
+            <div class="foto-price-radio-list">
+              <div>
+                <form action="" class="foto-price-radio-list-form">
+  
+                  <div class="form__field">
+  
+                    <input type="tel" name="name" placeholder="Телефон"
+                      pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="19" maxlength="19" />
+                    <span class="form__error">Это поле должно содержать телефон в формате +375 (29)
+                      456-78-90</span>
+                  </div>
+                  <div class="form__field">
+                    <button type="submit">Отправить</button>
+                  </div>
+  
+                </form>
+  
+              </div>
+              <div>
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
